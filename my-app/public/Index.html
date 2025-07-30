@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Post Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="breadcrumbs">Section > Sub-section</div>
+
+    <h1>Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor</h1>
+    <p>Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+
+    <div class="post-image"></div>
+
+    <p>This is Assignment Page</p>
+
+    <div class="author-info">
+      <div class="author-avatar">
+        <img src="C:\Users\USER\OneDrive\Desktop\React App\my-app\public/Roxy.jpg" alt="Nazmus Jahan Roxy">
+      </div>
+      <div>
+        <a href="author-profile.html" class="author-name">Nazmus Jahan Roxy</a>
+        <div class="post-date">3 July 2025</div>
+      </div>
+    </div>
+
+    <hr />
+
+    <p>Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem
+      Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum
+      Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor</p>
+
+    <div class="reactions">
+      <div class="reaction" onclick="updateReaction('like')">👍 Like <span id="like-count">20%</span></div>
+      <div class="reaction" onclick="updateReaction('love')">❤️ Love <span id="love-count">60%</span></div>
+      <div class="reaction" onclick="updateReaction('angry')">😡 Angry <span id="angry-count">5%</span></div>
+      <div class="reaction" onclick="updateReaction('sad')">😢 Sad <span id="sad-count">5%</span></div>
+    </div>
+
+    <h3>20 Comments</h3>
+
+    <!-- একটাই ইনপুট ও লিস্ট বক্স -->
+    <div class="comment-box">
+      <input type="text" id="commentBox" placeholder="Write your comment..." />
+      <button onclick="submitComment()">➤</button>
+    </div>
+
+    <div class="comment-list" id="commentList">
+      <div class="comment">
+        <div class="comment-avatar"></div>
+        <div>
+          <div class="comment-author"><a href="author-profile.html">Nazmus Jahan Roxy</a>, 10 February 2025</div>
+          <div class="comment-text">Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor</div>
+          <div class="comment-actions">Like 12 Dislike 1 <span class="reply">Reply</span> <span
+              class="report">Report</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
